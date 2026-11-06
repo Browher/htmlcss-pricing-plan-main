@@ -21,17 +21,30 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .plan {
     padding: 20px;
     text-align: center;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid gainsboro;
     flex-basis: calc(100% / 3 - (40px / 3));
     min-width: 250px;
     flex-grow: 1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 
+
+}
+
+.plan h2 {
+    text-align: left;
+}
+
+.plan-tag {
+    text-align: left;
 }
 
 
@@ -41,6 +54,7 @@ body {
     top: 0px;
     background-color: blueviolet;
     border-radius: 10px;
+    border-color: blueviolet;
 }
 
 .plans {
@@ -79,10 +93,18 @@ body {
     background-color: blueviolet;
     border-radius: 15px;
     color: white;
+    margin: 20px 0px;
 }
 
 .plan-featured .btn {
     background-color: white;
     color: blueviolet;
 
+}
+
+.billing {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    gap: 10px;
 }
